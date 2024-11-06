@@ -1,0 +1,84 @@
+/* estilos.css */
+.nosotros {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Separa la marca de los elementos de navegación */
+  align-items: center;
+  background-color: rgba(0, 0, 128, 0.8); /* Fondo azul más oscuro con más opacidad */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s; /* Efecto suave de cambio */
+}
+
+.navbar:hover {
+  background-color: rgba(0, 0, 128, 1); /* Fondo sólido al hacer hover */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s; /* Suaviza los efectos */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: #000; /* Cambia el color del texto a negro */
+}
+
+/* Responsividad */
+@media (max-width: 991px) {
+  .navbar-collapse {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar-nav {
+      width: 100%;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+      justify-content: center;
+  }
+}

@@ -1,0 +1,118 @@
+/* Footer */
+#footer {
+  background-color: #1f2937; /* Fondo gris oscuro */
+  color: #e5e7eb; /* Texto gris claro */
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Sección superior del footer */
+#footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #4b5563; /* Línea sutil */
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+/* Columna de contacto */
+#footer .footer-contact {
+  flex: 1;
+  min-width: 250px;
+}
+
+#footer h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #10b981; /* Verde esmeralda */
+  margin-bottom: 15px;
+}
+
+/* Descripción en la columna de contacto */
+#footer .footer-contact p {
+  font-size: 1rem;
+  color: #d1d5db; /* Gris claro */
+  margin-bottom: 20px;
+}
+
+/* Información agrupada */
+#footer .info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#footer .info-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  color: #e5e7eb; /* Texto gris claro */
+}
+
+#footer .info-box i {
+  font-size: 2rem;
+  color: #10b981; /* Verde esmeralda */
+}
+
+#footer .info-box h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#footer .info-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: #d1d5db; /* Gris claro */
+}
+
+/* Links */
+#footer .footer-links {
+  flex: 1;
+  min-width: 250px;
+}
+
+#footer .footer-links h4 {
+  font-size: 1.3rem;
+  color: #10b981; /* Verde esmeralda */
+  margin-bottom: 15px;
+}
+
+#footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-links ul li {
+  margin-bottom: 10px;
+}
+
+#footer .footer-links ul li a {
+  color: #e5e7eb; /* Texto gris claro */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+#footer .footer-links ul li a:hover {
+  color: #10b981; /* Verde esmeralda al hacer hover */
+}
+
+/* Créditos */
+#footer .credits {
+  font-size: 0.9rem;
+  color: #d1d5db; /* Gris claro */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  #footer .footer-top {
+    flex-direction: column;
+  }
+}
